@@ -1,0 +1,31 @@
+{
+	"name": "lootmarket/laravel-vue-blade-component",
+	"description": "Jankless Vue Components in Laravel Blade Templates",
+	"keywords": [
+		"lootmarket",
+		"laravel-vue-blade-component",
+		"laravel-vue",
+		"jankless"
+	],
+	"homepage": "https://github.com/lootmarket/laravel-vue-blade-component",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Paul Morrison",
+			"email": "paul@lootmarket.com",
+			"homepage": "https://lootleague.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"LootMarket\\VueComponent\\": "src"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	}
+}
