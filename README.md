@@ -1,3 +1,1 @@
-# In Progress
-
-Basics committed, actual meat coming soon.
+<p align="center"><img width="293" height="117" src="logo.png"></p>
