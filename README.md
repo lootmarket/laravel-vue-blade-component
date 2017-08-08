@@ -1,5 +1,10 @@
 <p align="center"><img width="293" height="117" src="logo.png"></p>
 
+<p align="center">
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lootmarket/laravel-vue-blade-component.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-blade-directives)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+</p>
+
 ## What is Laravel Vue Blade Directive?
 
 Originally inspired by [Faking Server-Side Rendering With Vue.js and Laravel by Anthony Gore](https://vuejsdevelopers.com/2017/04/09/vue-laravel-fake-server-side-rendering/), Laravel Vue Blade Directive package is meant to provide tools to build static PHP and Vue Templates in tandem.
