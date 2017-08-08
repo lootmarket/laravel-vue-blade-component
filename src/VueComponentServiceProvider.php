@@ -1,5 +1,4 @@
 <?php
-
 namespace LootMarket\VueComponent;
 
 use Illuminate\Support\Facades\Config;
