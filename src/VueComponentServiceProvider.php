@@ -1,7 +1,7 @@
 <?php
 namespace LootMarket\VueComponent;
 
-use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class VueComponentServiceProvider extends ServiceProvider
