@@ -31,7 +31,7 @@ Then add the ServiceProvider to your `config/app.php` file:
 'providers' => [
     ...
 
-    Lootmarket\VueComponent\VueComponentServiceProvider::class
+    LootMarket\VueComponent\VueComponentServiceProvider::class
 
     ...
 ];

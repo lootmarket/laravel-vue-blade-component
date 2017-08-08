@@ -1,7 +1,6 @@
-
 <?php
 
-namespace Lootmarket\VueComponent;
+namespace LootMarket\VueComponent;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
