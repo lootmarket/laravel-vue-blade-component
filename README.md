@@ -45,13 +45,60 @@ Then add the ServiceProvider to your `config/app.php` file:
 
 ### Documentation
 
-> Proper Documentation Coming soon, I swear.
+Super lighteweight documentation below. Please let us know if there's something more descriptive you needed.
 
-`@vueComponent(component-path)`
+## @vueComponent(<component-path>)
 
-`@vue(jsVariable, $phpVariable)`
+Blade Directive for rendering our Vue Components. 
 
-`@v(jsVariableString)`
+**component-path** is currently a filename for a blade component. Does not support subfolders at this time.
+
+usage example:
+
+```blade
+@vueComponent(app)
+
+this loads resources/views/app.blade.php
+```
+
+Templates loaded via `@vueComponent` will have `$vue` passed to them as a boolean.
+
+
+## @vue(<jsVariable>, <phpVariable>)
+
+Blade Directive for displaying `{{ variableFromVueJS }}` or `$phpVariable` written to dom. This is used within a `@vueComponent` file.
+
+If `$vue` is true, will simply echo out the php variable passed. If `$vue` is false, will echo out a string to be interpreted within a javascript template.
+
+usage example:
+
+```blade
+@vue('$store.state.username', $initialState['username'])
+```
+
+When used within a `@vueComponent()` template, it will return:
+
+the result of `<?php echo $initialState['username'] ?>` to the dom. 
+
+the string `{{ $store.state.username }}` to the js template.
+
+This allows us to declare a vuex variable in vue template, and echo out the initial state to the server rendered php.
+
+
+## @v(<jsVariableString>)
+
+A simple blade directive for taking a string, and echoing it with `{{ string }}` to the dom. This allows us to easily write in js variables for our vue templates.
+
+This is used by `@vue()`, but can be called directly if needed.
+
+usage example:
+
+```blade
+@v($store.state.username)
+```
+
+this will simply return the string `{{ $store.state.username }}` to be used within vue.
+
 
 ## About LootMarket
 
