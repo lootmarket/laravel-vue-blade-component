@@ -37,10 +37,15 @@ Then add the ServiceProvider to your `config/app.php` file:
 ];
 ```
 
+## How to Use Laravel Vue Blade Directive
 
-## How to build a Jankless Vue Component in Blade Templates
+### Guides
 
-> Coming soon, I swear.
+1. [A Simple Vue Instance](docs/simple-vue-instance.md)
+
+### Documentation
+
+> Proper Documentation Coming soon, I swear.
 
 `@vueComponent(component-path)`
 
