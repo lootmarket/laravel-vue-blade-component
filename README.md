@@ -61,7 +61,8 @@ usage example:
 this loads resources/views/app.blade.php
 ```
 
-Templates loaded via `@vueComponent` will have `$vue` passed to them as a boolean.
+Templates loaded via `@vueComponent` will have `$vue` passed to them as a boolean. Additionally, they will be pushed to a [stack](https://laravel.com/docs/5.4/blade#stacks) called `vue`
+
 
 
 #### `@vue(<jsVariable>, <phpVariable>)`
@@ -98,6 +99,12 @@ usage example:
 ```
 
 this will simply return the string `{{ $store.state.username }}` to be used within vue.
+
+#### `@stack('vue')`
+
+This is a native function with Laravel 5.4 Blades - it will render out the js template for each component passed to `@vueComponent()`
+
+Each component is only rendered once, not multiple times if done in a loop.
 
 
 ## About LootMarket
