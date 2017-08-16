@@ -47,7 +47,7 @@ Then add the ServiceProvider to your `config/app.php` file:
 
 Super lighteweight documentation below. Please let us know if there's something more descriptive you needed.
 
-#### @vueComponent(<component-path>)
+#### `@vueComponent(<component-path>)`
 
 Blade Directive for rendering our Vue Components. 
 
@@ -64,7 +64,7 @@ this loads resources/views/app.blade.php
 Templates loaded via `@vueComponent` will have `$vue` passed to them as a boolean.
 
 
-#### @vue(<jsVariable>, <phpVariable>)
+#### `@vue(<jsVariable>, <phpVariable>)`
 
 Blade Directive for displaying `{{ variableFromVueJS }}` or `$phpVariable` written to dom. This is used within a `@vueComponent` file.
 
@@ -85,7 +85,7 @@ the string `{{ $store.state.username }}` to the js template.
 This allows us to declare a vuex variable in vue template, and echo out the initial state to the server rendered php.
 
 
-#### @v(<jsVariableString>)
+#### `@v(<jsVariableString>)`
 
 A simple blade directive for taking a string, and echoing it with `{{ string }}` to the dom. This allows us to easily write in js variables for our vue templates.
 
