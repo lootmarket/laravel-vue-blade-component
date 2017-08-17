@@ -42,6 +42,7 @@ Then add the ServiceProvider to your `config/app.php` file:
 ### Guides
 
 1. [A Simple Vue Instance](docs/simple-vue-instance.md)
+1. [Toggling an Element with v-if && v-show](docs/toggling-vue-elements.md)
 
 ### Documentation
 
