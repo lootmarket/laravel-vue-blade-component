@@ -47,18 +47,24 @@ Then add the ServiceProvider to your `config/app.php` file:
 
 Super lighteweight documentation below. Please let us know if there's something more descriptive you needed.
 
-#### `@vueComponent(<component-path>)`
+#### `@vueComponent(<component-name>, <optional path>)`
 
 Blade Directive for rendering our Vue Components. 
 
-**component-path** is currently a filename for a blade component. Does not support subfolders at this time.
+**component-name** file name of the component to be rendered.
+
+**path** optionally provide a path to the component if nested in a subfolder.
 
 usage example:
 
 ```blade
-@vueComponent(app)
+@vueComponent(App)
 
-this loads resources/views/app.blade.php
+this loads resources/views/App.blade.php
+
+@vueComponent(App, vue/routes)
+
+this loads resources/views/vue/routes/App.blade.php
 ```
 
 Templates loaded via `@vueComponent` will have `$vue` passed to them as a boolean. Additionally, they will be pushed to a [stack](https://laravel.com/docs/5.4/blade#stacks) called `vue`
